@@ -1,0 +1,158 @@
+#collapsibleNavbar .navbar-nav{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.726);
+}
+#collapsibleNavbar .navbar-nav li{
+    position: relative;
+}
+#collapsibleNavbar .navbar-nav .nav-item.active a::after{
+    content:" ";
+    display:block;
+    width: 100%;
+    height:5px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background:linear-gradient(to right, yellow,orange);
+}
+
+
+.container .collapse  .navbar-nav .nav-item .nav-link::after{
+    
+    transition: all 1s;
+}
+
+.navbar-nav .nav-item{
+    padding: 0 20px;
+    
+}
+
+#collapsibleNavbar .navbar-nav .nav-item:hover a::after{
+    content:" ";
+    display:block;
+    width: 100%;
+    height:5px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background:linear-gradient(to right, yellow,orange);
+
+    
+}
+.carousel-inner .carousel-item  {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:94vh;
+    padding-top:250px;
+}
+.carousel-inner .item1{
+    background-image: url(../img/hero-1.jpg);
+}
+.carousel-inner .item2{
+    background-image: url(../img/hero-2.jpg);
+}
+.carousel-inner .item3{
+    background-image: url(../img/hero-3.jpg);
+}
+header{
+    position: absolute;
+    z-index: 1;
+    left:50%;
+    transform: translate(-50%);
+    top:3%;
+}
+.carousel-indicators li{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(255 255 255);
+    background: rgb(0 0 0 / 0%);
+}
+.carousel-indicators li.active{
+    background-color: aqua;
+}
+.btn-trailer{
+   background: linear-gradient(to right, rgb(255 165 0), rgb(255 255 0));
+   border: none;
+   width: 200px;
+   border-radius: 30px;
+   padding: 15px 50px;
+   position: relative;
+   overflow: hidden;
+}
+.btn-trailer::after{
+   content: "";
+   display: block;
+   width: 0%;
+   height:100%;
+   position: absolute;
+   top:0;
+   left:-15%;
+   background-color: orange;
+   transform: skew(30deg);
+   transition: all ease .7s;
+}
+.btn-trailer:hover::after{
+   width: 120%;
+}
+.btn-trailer i,.btn-trailer span{
+   position:relative;
+   z-index: 2;
+}
+
+#newin .titile_heading{
+    position: relative;
+    border-bottom:2px solid rgba(136, 31, 31, 0.13) ;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+#newin .titile_heading::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    height:4px;
+    width: 10%;
+    bottom: 0;
+    left:0;
+    background: linear-gradient(to right, yellow,orange);
+
+}
+#newin .newin__content .responsive .col-md-3{
+    outline: none;
+}
+.responsive .slick-prev::before,.responsive .slick-next::before{
+    color:red
+}
+.responsive .slick-dots li button::before{
+    font-size: 15px;
+}
+.nav{
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.comingsoon{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.comingsoon{
+    position: relative;
+}
+.comingsoon .container .row  .bg{
+    background: url(img/slide-3.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
